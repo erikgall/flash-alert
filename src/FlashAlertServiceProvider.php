@@ -15,10 +15,10 @@ class FlashAlertServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom($this->getViewsPath(), 'alert');
+        $this->loadViewsFrom($this->getViewsPath(), 'flash');
 
         $this->publishes([
-            $this->getViewsPath() => resource_path('views/vendor/alert')
+            $this->getViewsPath() => resource_path('views/vendor/flash')
         ]);
     }
 
