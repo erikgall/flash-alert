@@ -39,6 +39,6 @@ class FlashAlertServiceProvider extends ServiceProvider
     protected function getViewsPath()
     {
 
-        return __DIR__.'/views';
+        return __DIR__.'/../views';
     }
 }
