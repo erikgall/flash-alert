@@ -45,8 +45,8 @@ class Alert
     public function message($message, $level = 'success')
     {
 
-        $this->session->flash('alert.message', $message);
-        $this->session->flash('alert.type', $message);
+        $this->session->alert('alert.message', $message);
+        $this->session->alert('alert.type', $message);
 
         return $this;
 
