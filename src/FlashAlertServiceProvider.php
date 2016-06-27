@@ -27,7 +27,7 @@ class FlashAlertServiceProvider extends ServiceProvider
     {
         $this->app->bind(SessionStore::class, SessionStoreContract::class);
 
-        $this->app->singleton('flash', function(){
+        $this->app->singleton('alert', function(){
             return $this->app->make(Alert::class);
         });
     }
