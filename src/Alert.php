@@ -46,7 +46,7 @@ class Alert
     {
 
         $this->session->alert('alert.message', $message);
-        $this->session->alert('alert.type', $message);
+        $this->session->alert('alert.type', $level);
 
         return $this;
 
