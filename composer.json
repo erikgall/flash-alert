@@ -1,0 +1,23 @@
+{
+    "name": "erikgall/flash-alert",
+    "description": "Full width VueJS flash alerts",
+    "authors": [
+        {
+            "name": "Erik Galloway",
+            "email": "emg5478@psu.edu"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "phpunit/phpunit": "~4.0",
+        "laravel/framework": "~5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "EGALL\\FlashAlert\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
