@@ -14,7 +14,7 @@ class Alert
 {
 
     /**
-     * Alert constructor.
+     * FlashAlert constructor.
      *
      * @param \EGALL\FlashAlert\Contracts\SessionStore $session
      */
@@ -25,6 +25,25 @@ class Alert
 
     }
 
+    /**
+     * Set the autohide interval.
+     * 
+     * @param int $interval
+     * @return $this
+     */
+    public function autohide($interval = 3000)
+    {
+
+        $this->session->alert('alert.autohide', $interval);
+
+        return $this;
+
+    }
+
+    /**
+     * @param $message
+     * @return $this
+     */
     public function error($message)
     {
 
@@ -33,6 +52,23 @@ class Alert
         return $this;
     }
 
+    /**
+     * @param $icon
+     * @return $this
+     */
+    public function icon($icon)
+    {
+
+        $this->session->alert('alert.icon', $icon);
+
+        return $this;
+
+    }
+
+    /**
+     * @param $message
+     * @return $this
+     */
     public function info($message)
     {
 
@@ -42,6 +78,11 @@ class Alert
 
     }
 
+    /**
+     * @param $message
+     * @param string $level
+     * @return $this
+     */
     public function message($message, $level = 'success')
     {
 
@@ -52,6 +93,10 @@ class Alert
 
     }
 
+    /**
+     * @param $message
+     * @return $this
+     */
     public function success($message)
     {
 
@@ -61,6 +106,10 @@ class Alert
 
     }
 
+    /**
+     * @param $message
+     * @return $this
+     */
     public function warning($message)
     {
 

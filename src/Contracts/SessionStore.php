@@ -14,9 +14,9 @@ interface SessionStore
     /**
      * Flash an alert message to the session.
      *
-     * @param $name
-     * @param $data
-     * @return mixed
+     * @param string $name
+     * @param string $data
+     * @return $this
      */
     public function alert($name, $data);
 }

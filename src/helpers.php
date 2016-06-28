@@ -3,12 +3,12 @@
 if (!function_exists('alert')) {
 
     /**
-     * Flash an alert to the session.
+     * Flash a vuejs alert to the session.
      *
      * @param string|null $message
      * @return \EGALL\FlashAlert\Alert
      */
-    function alert($message = null)
+    function flash($message = null)
     {
 
         $alert = app('alert');

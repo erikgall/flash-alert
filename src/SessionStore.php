@@ -5,6 +5,12 @@ namespace EGALL\FlashAlert;
 use EGALL\FlashAlert\Contracts\SessionStore as Contract;
 use Illuminate\Session\Store;
 
+/**
+ * Flash alert session store.
+ *
+ * @package EGALL\FlashAlert
+ * @author Erik Galloway <erik@mybarnapp.com>
+ */
 class SessionStore implements Contract
 {
 
