@@ -90,12 +90,6 @@
                 };
             },
 
-            show() {
-
-                this.show = true;
-
-            },
-
             startTimer() {
                 setTimeout(this.timerCallback(this), this.autohide);
             }
