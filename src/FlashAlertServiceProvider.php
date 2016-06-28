@@ -29,7 +29,7 @@ class FlashAlertServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
-            $this->getSassPath() => resource_path('/assets/js/sass/vendor')
+            $this->getSassPath() => resource_path('/assets/sass/sass/vendor')
         ]);
 
         $this->publishes([
