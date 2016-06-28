@@ -130,15 +130,12 @@
 
         },
 
-        watch: {
+        ready() {
 
-            show() {
+            if (this.show == true && this.autohide > 0) {
 
-                if (this.show == true && this.autohide > 0) {
+                this.startTimer();
 
-                    this.startTimer();
-
-                }
             }
         }
 
