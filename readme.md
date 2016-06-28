@@ -12,7 +12,7 @@
 
 3. In the command line run the following command to publish the assets:
 
-`php artisan vendor:publish --provider FlashAlertServiceProvider`
+`php artisan vendor:publish`
 
 4. Import the component like such (assuming your are inside your main app.js located at `resources/assets/js`):
 
