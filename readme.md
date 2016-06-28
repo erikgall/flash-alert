@@ -52,6 +52,8 @@ new Vue({
 
 ```sass
 @import "vendor/alert";
+// For animations the package includes a sass copy of animate.css
+@import "vendor/animate";
 ```
 
 8. Run gulp
