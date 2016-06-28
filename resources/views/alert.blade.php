@@ -1,4 +1,4 @@
-@if(session()->has('alert'))
+@if(session()->has('alert.message'))
 
     <flash-alert :show.sync="true"
                   icon="{{ session()->has('alert.icon') ? session('alert.icon') : 'fa-bell-o' }}"
