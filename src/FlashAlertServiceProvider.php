@@ -29,6 +29,10 @@ class FlashAlertServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
+            $this->getSassPath() => resource_path('/assets/js/sass/vendor')
+        ]);
+
+        $this->publishes([
             $this->getJavascriptPath() => resource_path('/assets/js/components')
         ]);
     }
@@ -58,6 +62,18 @@ class FlashAlertServiceProvider extends ServiceProvider
     {
 
         return __DIR__ . '/../resources/assets/js';
+
+    }
+
+    /**
+     * Get the Sass directory to copy over the styling.
+     *
+     * @return string
+     */
+    protected function getSassPath()
+    {
+
+        return __DIR__ . '/../resources/assets/sass';
 
     }
 

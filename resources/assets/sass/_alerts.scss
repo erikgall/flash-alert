@@ -1,0 +1,36 @@
+.alert {
+    color: #fff;
+
+    &-fixed {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1060;
+        padding: 0;
+        border: none;
+
+        .icon {
+            height: 100%;
+            padding-left: 0 !important;
+            line-height: 25px;
+
+            &-wrapper {
+                padding: 15px;
+                background-color: #333;
+                width: 70px;
+            }
+            .fa {
+                color: #fff;
+                font-size: 38px;
+            }
+        }
+
+        .message {
+            padding-left: 30px;
+            margin-left: -70px;
+            line-height: 70px;
+        }
+
+    }
+
+}

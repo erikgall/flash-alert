@@ -1,5 +1,12 @@
 # Laravel/VueJS Flash Alerts
 
+## Requirements
+
+1. Laravel
+2. Laravel Elixir
+3. VueJS
+4. Laravel-Elixir-Vueify
+
 ## Installation
 
 1. Run the following command from your project root:
@@ -40,6 +47,14 @@ new Vue({
 </div>
 
 ```
+
+7. Add the sass file to your main `app.sass` file:
+
+```sass
+@import "vendor/alert";
+```
+
+8. Run gulp
 
 ## Usage
 
