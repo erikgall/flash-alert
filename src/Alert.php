@@ -2,7 +2,7 @@
 
 namespace EGALL\FlashAlert;
 
-use EGALL\FlashAlert\Contracts\SessionStore;
+use EGALL\FlashAlert\Contracts\SessionStore as SessionContract;
 
 /**
  * Flash Alert
@@ -18,7 +18,7 @@ class Alert
      *
      * @param \EGALL\FlashAlert\Contracts\SessionStore $session
      */
-    public function __construct(SessionStore $session)
+    public function __construct(SessionContract $session)
     {
 
         $this->session = $session;

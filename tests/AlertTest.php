@@ -54,10 +54,10 @@ class AlertTest extends PHPUnit_Framework_TestCase
     public function testAutohide()
     {
 
-        $this->session->shouldReceive('alert')->with('alert.interval', 3500);
+        $this->session->shouldReceive('alert')->with('alert.autohide', 3500);
         $this->subject->autohide(3500);
 
-        $this->session->shouldReceive('alert')->with('alert.interval', 4000);
+        $this->session->shouldReceive('alert')->with('alert.autohide', 4000);
         $this->subject->autohide(4000);
     }
 
@@ -71,7 +71,8 @@ class AlertTest extends PHPUnit_Framework_TestCase
 
         $this->session->shouldReceive('alert')->with('alert.message', 'Error message.');
         $this->session->shouldReceive('alert')->with('alert.type', 'danger');
-        $this->session->shouldReceive('alert')->with('alert.interval', 4000);
+        $this->session->shouldReceive('alert')->with('alert.autohide', 4000);
+
         $this->subject->autohide(4000);
 
         $this->subject->error('Error message.')->autohide(4000);
