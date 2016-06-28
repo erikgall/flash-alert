@@ -12,6 +12,9 @@
         "phpunit/phpunit": "~4.0",
         "laravel/framework": "~5.2"
     },
+    "require-dev": {
+        "mockery/mockery": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "EGALL\\FlashAlert\\": "src/"
